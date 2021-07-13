@@ -9,7 +9,7 @@ if (isset($_SESSION['id']) && $_SESSION['time'] + 3600 > time()) {
     $members->execute(array($_SESSION['id']));
     $member = $members->fetch();
 } else {
-    header('Location: top.php');
+    header('Location:join/top.php');
     exit();
 }
 
