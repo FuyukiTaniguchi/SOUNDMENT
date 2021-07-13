@@ -6,5 +6,5 @@ $_SESSION = array();
 
 session_destroy();
 
-header('Location: join/top.php');
+header('Location: top.php');
 ?>
