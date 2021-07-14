@@ -17,7 +17,7 @@ if ($_POST['user'] !== null && $_POST['password'] !== null) {
         $_SESSION['id'] = $user['id'];
         $_SESSION['user'] = $user['user'];
         $_SESSION['time'] = time();
-        header('location:index.php');
+        header('location: index.php');
         exit();
     } else {
         $error['login'] = 'failed';
