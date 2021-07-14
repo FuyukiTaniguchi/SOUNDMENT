@@ -13,8 +13,8 @@ if (isset($_SESSION['id']) && $_SESSION['time'] + 3600 > time()) {
     exit();
 }
 
-// require('./upload.php');
-// require('./like.php');
+require('./upload.php');
+require('./like.php');
 //DB投稿取得　searchに値があるかで分岐
 if (empty($_GET) || $_GET['search'] === '') {
     $user = $db->query('SELECT me.user, p.* FROM members me, posts p WHERE me.id=p.member_id ORDER BY p.created DESC');
