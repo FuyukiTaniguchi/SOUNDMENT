@@ -136,37 +136,37 @@ if ($_POST['user'] !== null && $_POST['password'] !== null) {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script>
-        const form = document.getElementById('login_form');
+        // const form = document.getElementById('login_form');
 
-        form.addEventListener('submit', (e) => {
-            // e.preventDefault();
-            const postData = new FormData(document.forms.login_form);
-            for (let setPost of postData) {
-                postData.set(setPost[0], setPost[1]);
-                console.log(setPost);
-            }
+        // form.addEventListener('submit', (e) => {
+           
+        //     const postData = new FormData(document.forms.login_form);
+        //     for (let setPost of postData) {
+        //         postData.set(setPost[0], setPost[1]);
+        //         console.log(setPost);
+        //     }
 
-            const data = {
-                method: 'post',
-                body: postData
-            };
+        //     const data = {
+        //         method: 'post',
+        //         body: postData
+        //     };
 
-            fetch('top.php', data)
-                .then((res) => {
-                    if (res.status !== 200) {
-                        throw new Error("system error.");
-                    }
-                    return res.text();
-                }).then((text) => {
-                    console.log(text);
-                    // location.href = 'main.php'
-                }).catch((e) => {
-                    console.log(e.message);
-                }).finally(() => {
-                    console.log('done!')
+        //     fetch('top.php', data)
+        //         .then((res) => {
+        //             if (res.status !== 200) {
+        //                 throw new Error("system error.");
+        //             }
+        //             return res.text();
+        //         }).then((text) => {
+        //             console.log(text);
+        //             // location.href = 'main.php'
+        //         }).catch((e) => {
+        //             console.log(e.message);
+        //         }).finally(() => {
+        //             console.log('done!')
 
-                });
-        });
+        //         });
+        // });
     </script>
 
 </html>

@@ -1,6 +1,6 @@
 <?php
-
 require('./vendor/autoload.php');
+
 
 use Aws\S3\Exception\S3Exception;
 use Aws\S3\S3Client;
@@ -15,6 +15,14 @@ $s3 = new Aws\S3\S3Client(array(
     'region' => 'ap-northeast-1',
     'version' => 'latest',
 ));
+// $s3 = new Aws\S3\S3Client(array(
+//     'credentials' => array(
+//         'key' => 'AKIAZSOTEXMJDSKPWMDV',
+//         'secret' => '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'
+//     ),
+//     'region' => 'ap-northeast-1',
+//     'version' => 'latest',
+// ));
 
 
 $spaceExistence = '^(\s|　)+$';
@@ -57,8 +65,7 @@ if (!empty($_POST)) {
         }
     }
 }
-            
-            
+                    
 
 
 
