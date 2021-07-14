@@ -13,7 +13,7 @@ if (isset($_SESSION['id']) && $_SESSION['time'] + 3600 > time()) {
     exit();
 }
 
-require('./upload.php');
+// require('./upload.php');
 require('./like.php');
 //DB投稿取得　searchに値があるかで分岐
 if (empty($_GET) || $_GET['search'] === '') {
