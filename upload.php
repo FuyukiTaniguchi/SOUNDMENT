@@ -7,7 +7,7 @@ use Aws\S3\S3Client;
 use Aws\CommandPool;
 
 
-$s3 = new Aws\S3\S3Client(array(
+$s3 = new S3Client(array(
     'credentials' => array(
         'key' => 'AKIAZSOTEXMJJ4MKD3LW',
         'secret' => '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'
