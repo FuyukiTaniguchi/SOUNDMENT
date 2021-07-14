@@ -1,5 +1,5 @@
 <?php
-require('./dbconnect.php');
+require('../dbconnect.php');
 session_start();
 
 if (!isset($_SESSION['join'])) {
@@ -29,7 +29,7 @@ $passLength = strlen($_SESSION['join']['password']);
         $_SESSION['id'] = $user['id'];
         $_SESSION['user'] = $user['user'];
         $_SESSION['time'] = time();
-        header('location:index.php');
+        header('location: ../index.php');
         exit();
     }
 ?>

@@ -1,5 +1,5 @@
 <?php
-require('./dbconnect.php');
+require('../dbconnect.php');
 session_start();
 
 $spaceExistence = '^(\s|　)+$';
@@ -39,7 +39,7 @@ if (!empty($_POST)) {
 
     if (empty($error)) {
         $_SESSION['join'] = $_POST;
-        header('location:confirm.php');
+        header('location: confirm.php');
         exit();
     }
 }
