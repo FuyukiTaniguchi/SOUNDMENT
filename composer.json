@@ -2,6 +2,8 @@
     "require": {
       "php": "~7.0",
       "ext-mbstring": "*",
-      "ext-gd": "*"
+      "ext-gd": "*",
+      "aws/aws-sdk-php": "3.*",
+        "league/flysystem-aws-s3-v3": "1.*"
     }
  }

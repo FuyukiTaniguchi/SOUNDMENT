@@ -7,7 +7,7 @@ use Aws\S3\S3Client;
 use Aws\CommandPool;
 
 
-$s3 = new Aws\S3\S3Client(array(
+$s3 = new S3Client(array(
     'credentials' => array(
         'key' => 'AKIAZSOTEXMJJ4MKD3LW',
         'secret' => '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'
@@ -15,15 +15,6 @@ $s3 = new Aws\S3\S3Client(array(
     'region' => 'ap-northeast-1',
     'version' => 'latest',
 ));
-// $s3 = new Aws\S3\S3Client(array(
-//     'credentials' => array(
-//         'key' => 'AKIAZSOTEXMJDSKPWMDV',
-//         'secret' => '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'
-//     ),
-//     'region' => 'ap-northeast-1',
-//     'version' => 'latest',
-// ));
-
 
 $spaceExistence = '^(\s|　)+$';
 
