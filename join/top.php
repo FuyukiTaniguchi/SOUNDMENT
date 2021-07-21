@@ -1,7 +1,7 @@
 <?php
 require('../dbconnect.php');
 session_start();
-phpinfo();
+
 if ($_POST['user'] !== null && $_POST['password'] !== null) {
     $login = $db->prepare('SELECT * FROM members WHERE user=? AND password=? OR mail=? AND password=?');
     $reg_str = '/^[^ ]+@[^ ]+\.[a-z]{2,3}$/';
