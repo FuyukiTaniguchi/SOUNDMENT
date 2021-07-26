@@ -519,7 +519,7 @@ if (empty($_GET) || $_GET['search'] === '') {
                             const s3_client = () => {
                                 AWS.config.region = 'ap-northeast-1';
                                 AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-                                    IdentityPoolId: 'ap-northeast-1:6a49d588-bfb2-4341-9776-724224e30e6d'
+                                    IdentityPoolId: 'ap-northeast-1:xxxxxxxxxxxx'
 
                                 });
                                 AWS.config.credentials.get((err) => {

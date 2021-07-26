@@ -9,8 +9,8 @@ use Aws\CommandPool;
 
 $s3 = new S3Client(array(
     'credentials' => array(
-        'key' => 'AKIAZSOTEXMJJ4MKD3LW',
-        'secret' => '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'
+        'key' => 'xxxxxxxxx',
+        'secret' => 'xxxxxxxxxx'
     ),
     'region' => 'ap-northeast-1',
     'version' => 'latest',
